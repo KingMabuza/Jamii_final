@@ -8,14 +8,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-<link href="/media/jamii_logo.png" type="text/css" rel="stylesheet"/>
+<link href="/media/static/style.css" type="text/css" rel="stylesheet"/>
     <title>{% block title %}{% endblock title %}</title>
 </head>
 <body>
     <header>
             <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
                 <div class="container">
-                    <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'jamii_logo.png' %}" width="90" height="100" alt="Logo" class="img-fluid" /></a>
+                    <a class="navbar-brand" href="{% url 'index' %}"><img src="/media/static/jamii_logo.png" width="90" height="100" alt="Logo" class="img-fluid" /></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
