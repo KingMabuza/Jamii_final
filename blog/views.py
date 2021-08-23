@@ -2,6 +2,7 @@ from django.shortcuts import render
 from . import templates
 from newsapi import NewsApiClient
 from .models import Blog
+from django.contrib import messages
 
 
 # Create your views here.
@@ -39,6 +40,7 @@ def index(request):
         'content': obj.content,
         'subtitle': obj.subtitle
     }
+
     return render(request, 'blog/home.html', context={"mylist": mylist, 'post': blog_post})
 
 

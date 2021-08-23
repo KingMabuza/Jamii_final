@@ -15,7 +15,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
@@ -26,9 +25,8 @@ SECRET_KEY = 'django-insecure-)pj@f3a4s@4w%4swxw)f++j%65(bqn_h*)aaw8*b%d+rs463^c
 DEBUG = True
 
 ALLOWED_HOSTS = [
-'jamiiwebapp.herokuapp.com'
-]
 
+]
 
 # Application definition
 
@@ -43,7 +41,6 @@ INSTALLED_APPS = [
     'blog',
     'ckeditor'
 ]
-
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -76,7 +73,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'jamiidj.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
@@ -86,11 +82,10 @@ DATABASES = {
         'NAME': 'jamii',
         'ENFORCE_SCHEMA': False,
         'CLIENT': {
-                        'host': 'mongodb+srv://King:LnEJmLptBIxFKiDT@cluster0.hvhrx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
-                    }
-            }
+            'host': 'mongodb+srv://King:LnEJmLptBIxFKiDT@cluster0.hvhrx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
         }
-
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -110,7 +105,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
@@ -124,7 +118,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 STATIC_ROOT = Path(BASE_DIR, 'static')
@@ -133,10 +126,7 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = Path(BASE_DIR, 'media')
 
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
