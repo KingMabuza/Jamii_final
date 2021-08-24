@@ -124,6 +124,10 @@ USE_TZ = True
 STATIC_ROOT = Path(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = [
+    '/static'
+]
+
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = Path(BASE_DIR, 'media')
