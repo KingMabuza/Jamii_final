@@ -125,7 +125,7 @@ STATIC_ROOT = Path(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    'jamiidj/static'
+    '/jamiidj/static'
 ]
 
 
