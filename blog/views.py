@@ -38,7 +38,8 @@ def index(request):
         'author': obj.author,
         'date': obj.date_posted,
         'content': obj.content,
-        'subtitle': obj.subtitle
+        'subtitle': obj.subtitle,
+        'slug': obj.slug
     }
 
     return render(request, 'blog/home.html', context={"mylist": mylist, 'post': blog_post})
@@ -50,6 +51,11 @@ def about(request):
 
 def blog(request):
     return render(request, 'blog/blog.html')
+
+
+def blog_detail(request, slug):
+    post = Blog.objects.get(slug=slug)
+    return render(request, 'blog/blog_detail.html', {'post': post})
 
 
 def contact(request):
@@ -82,3 +88,7 @@ def opportunities(request):
 
 def signup(request):
     return render(request, 'blog/signup.html')
+
+
+def subscribe(request):
+    return render(request, 'blog/subscribe.html')

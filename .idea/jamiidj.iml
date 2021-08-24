@@ -20,6 +20,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="mc-validate" level="application" />
     <orderEntry type="library" name="classic-10_7" level="application" />
+    <orderEntry type="library" name="@fortawesome/fontawesome-free" level="application" />
+    <orderEntry type="library" name="bb138cfaf8" level="application" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />

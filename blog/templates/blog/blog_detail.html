@@ -1,0 +1,14 @@
+{% extends 'blog/layout.html' %}
+{% block title %} {{ post.title }} | Jamii{% endblock title %}
+{% block content %}
+    <div class="container text-center">
+        <h3 id="globe"><strong>{{ post.title }}</strong></h3>
+        <img src="{{ post.cover.url }}" />
+        <p>{{ post.date_posted }}</p>
+        <P><strong>Author:</strong> {{ post.author }}</P>
+        <p>{{ post.subtitle }}</p>
+        <p>{{ post.content | safe}}</p>
+    </div>
+
+
+{% endblock content %}
